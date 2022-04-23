@@ -1,4 +1,4 @@
-# dyeos
+# DyeOS
 
 | Version | In Work            |
 | ------- | ------------------ |
