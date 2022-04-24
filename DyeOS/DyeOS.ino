@@ -9,7 +9,8 @@ void loop() {
 }
 
 void readyled(){
+  delay(1000);
    digitalWrite(2, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
+  
 
 }
