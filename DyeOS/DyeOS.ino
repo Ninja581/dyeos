@@ -6,7 +6,10 @@ void setup() {
   // put your setup code here, to run once:
    pinMode(2, OUTPUT);
    Serial.begin(9600);
-   cmost.setDS1302Time(25, 35, 16, 1, 25, 4, 2022);
+
+    // Set the current date, and time in the following format:
+  // seconds, minutes, hours, day of the week, day of the month, month, year
+   //cmost.setDS1302Time(0, 4, 17, 1, 25, 4, 2022);
    
 
   
@@ -22,13 +25,8 @@ void loop() {
   Serial.print("/");
   Serial.print(cmost.month);
   Serial.print("/");
-  Serial.print(cmost.year);
-  Serial.print("  ");
-  Serial.print(cmost.hours);
-  Serial.print(":");
-  Serial.print(cmost.minutes);
-  Serial.print(":");
-  Serial.println(cmost.seconds);
+  Serial.println(cmost.year);
+
 
   
 }
