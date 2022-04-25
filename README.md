@@ -15,7 +15,6 @@
 | GPS Save My Location  | 
 | Easy to use  | 
 | SD Microcard Memory Adapter  | 
-| Notepad  | 
 | More Cooming Soon.... | 
 
 
