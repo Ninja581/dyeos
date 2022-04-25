@@ -19,13 +19,8 @@ void loop() {
   // put your main code here, to run repeatedly:
    readyled();
    cmost.updateTime();
-
-   Serial.print("Current Date / Time: ");
-  Serial.print(cmost.dayofmonth);
-  Serial.print("/");
-  Serial.print(cmost.month);
-  Serial.print("/");
-  Serial.println(cmost.year);
+   time();
+ 
 
 
   
@@ -36,4 +31,13 @@ void readyled(){
    digitalWrite(2, HIGH);
    
 
+}
+
+void time(){
+    Serial.print("Current Date / Time: ");
+  Serial.print(cmost.dayofmonth);
+  Serial.print("/");
+  Serial.print(cmost.month);
+  Serial.print("/");
+  Serial.println(cmost.year);
 }
