@@ -8,7 +8,7 @@
 | ------------- | ------------- |
 | < 0.1.x  | :white_check_mark: |
 
-![Features](https://s12.directupload.net/images/200907/9m8qldwi.png)
+![Features](https://github.com/Ninja581/dyeos/blob/main/img/FEATURES.png)
 
 |   | 
 | ------------- | 
