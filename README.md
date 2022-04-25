@@ -1,4 +1,4 @@
-# DyeOS
+# __DyeOS__
 
 ![Version](https://github.com/Ninja581/dyeos/blob/main/img/VERSION.png)
 
