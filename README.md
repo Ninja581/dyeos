@@ -19,6 +19,9 @@
 | SD Microcard Memory Adapter  | 
 | More Cooming Soon.... | 
 
+![Info](https://github.com/Ninja581/dyeos/blob/main/img/INFO.png)
+
+
 
 
 ```
