@@ -34,7 +34,8 @@ void readyled(){
 }
 
 void time(){
-    Serial.print("Current Date / Time: ");
+  delay(60000);
+    Serial.print("Current Date : ");
   Serial.print(cmost.dayofmonth);
   Serial.print("/");
   Serial.print(cmost.month);
