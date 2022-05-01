@@ -9,7 +9,7 @@ void setup() {
    pinMode(2, OUTPUT);
    pinMode(buzzer, OUTPUT);
    Serial.begin(9600);
-
+   StartSound();
     // Set the current date, and time in the following format:
   // seconds, minutes, hours, day of the week, day of the month, month, year
    //cmost.setDS1302Time(0, 4, 17, 1, 25, 4, 2022);
@@ -21,7 +21,7 @@ void setup() {
 void loop() {
   
    readyled();
-   StartSound();
+   
    cmost.updateTime();
    time();
  
