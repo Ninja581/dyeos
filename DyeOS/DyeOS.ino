@@ -13,28 +13,17 @@ void setup() {
     // Set the current date, and time in the following format:
   // seconds, minutes, hours, day of the week, day of the month, month, year
    //cmost.setDS1302Time(0, 4, 17, 1, 25, 4, 2022);
-   
-
-  
 }
 
 void loop() {
-  
    readyled();
-   
    cmost.updateTime();
    time();
- 
-
-
-  
 }
 
 void readyled(){
   delay(1000);
    digitalWrite(2, HIGH);
-   
-
 }
 
 void time(){
