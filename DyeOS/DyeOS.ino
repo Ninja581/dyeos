@@ -1,10 +1,13 @@
 #include <virtuabotixRTC.h>
 // Creation of the Real Time Clock Object
 virtuabotixRTC cmost(6, 7, 8);
+const int buzzer = 12;
+
 
 void setup() {
-  // put your setup code here, to run once:
+ 
    pinMode(2, OUTPUT);
+   pinMode(buzzer, OUTPUT);
    Serial.begin(9600);
 
     // Set the current date, and time in the following format:
@@ -16,8 +19,9 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
    readyled();
+   StartSound();
    cmost.updateTime();
    time();
  
@@ -42,3 +46,10 @@ void time(){
   Serial.print("/");
   Serial.println(cmost.year);
 }
+
+void StartSound(){
+   tone(buzzer, 1000); // Send 1KHz sound signal...
+  delay(1000);        // ...for 1 sec
+  noTone(buzzer);     // Stop sound...
+  delay(1000);        // ...for 1sec
+  }
