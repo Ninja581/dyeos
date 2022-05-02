@@ -16,14 +16,8 @@ void setup() {
 }
 
 void loop() {
-   readyled();
    cmost.updateTime();
    time();
-}
-
-void readyled(){
-  delay(1000);
-   digitalWrite(2, HIGH);
 }
 
 void time(){
