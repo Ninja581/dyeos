@@ -14,8 +14,7 @@
 
 |   | 
 | ------------- | 
-| Easy to use  | 
-| More Cooming Soon.... | 
+| Free Ready Solution for you. |
 
 ![Info](https://github.com/Ninja581/dyeos/blob/main/img/INFO.png)
 
