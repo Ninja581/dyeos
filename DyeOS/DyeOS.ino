@@ -90,19 +90,17 @@ void setup() {
    pinMode(2, OUTPUT);
    pinMode(buzzer, OUTPUT);
    Serial.begin(9600);
-   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
+   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
    Serial.println(F("SSD1306 allocation failed"));
    for (;;); // Don't proceed, loop forever
   }
   display.clearDisplay();
-   StartSound();
-    // Set the current date, and time in the following format:
-  // seconds, minutes, hours, day of the week, day of the month, month, year
-   //cmost.setDS1302Time(0, 4, 17, 1, 25, 4, 2022);
+   StartSound(); // Boot Sound
+   showBitmap(); // Showing a bitmap
 }
 
 void loop() {
-   showBitmap();
+   OLED_TURN_ON();
 }
 
 
@@ -118,5 +116,15 @@ void StartSound(){
   display.drawBitmap(0, 0, bitmap, bitmap_height, bitmap_width, WHITE);
   display.display();
   delay(1000);
+  
 }
+
+void OLED_TURN_ON(void){
+  delay(5000);
+   display.clearDisplay();
+   
+   display.display();
+  delay(1000);
+   
+  }
   
