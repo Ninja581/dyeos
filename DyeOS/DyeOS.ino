@@ -122,6 +122,8 @@ void StartSound(){
 void OLED_TURN_ON(void){
   delay(5000);
    display.clearDisplay();
+   // Write you code
+
    
    display.display();
   delay(1000);
